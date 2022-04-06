@@ -15,3 +15,6 @@ const listaDeDestinos = new Array(
 listaDeDestinos.push(`Brasília`) //Adicionando um novo elemento a lista
 console.log("Destinos possíveis: ")
 console.log(listaDeDestinos)
+
+listaDeDestinos.splice(1,1) //Remove elemento da lista pela posição na lista
+console.log(listaDeDestinos)
