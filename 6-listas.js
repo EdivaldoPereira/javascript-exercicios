@@ -12,5 +12,6 @@ const listaDeDestinos = new Array(
     `Rio de Janeiro`
 )
 
+listaDeDestinos.push(`Brasília`) //Adicionando um novo elemento a lista
 console.log("Destinos possíveis: ")
 console.log(listaDeDestinos)
