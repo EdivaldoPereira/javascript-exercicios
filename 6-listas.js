@@ -18,3 +18,4 @@ console.log(listaDeDestinos)
 
 listaDeDestinos.splice(1,1) //Remove elemento da lista pela posição na lista
 console.log(listaDeDestinos)
+console.log(listaDeDestinos[3]) //Exibindo elemento específico da lista
