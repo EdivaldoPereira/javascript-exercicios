@@ -6,3 +6,5 @@ const sobrenome = "Pereira"
 
 console.log(nome, sobrenome)
 console.log(nome + " " + sobrenome)
+
+console.log(`O nome dela é ${nome}`)
