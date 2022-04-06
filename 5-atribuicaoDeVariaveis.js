@@ -8,3 +8,5 @@ console.log(nome, sobrenome)
 console.log(nome + " " + sobrenome)
 
 console.log(`O nome dela é ${nome} ${sobrenome}`)
+const nomeCompleto = nome + " " + sobrenome
+console.log(nomeCompleto)
