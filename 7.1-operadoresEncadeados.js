@@ -14,7 +14,7 @@ if (
     idadeComprador >= 18 ||
     estaAcompanhado == true
     ) {
-    console.log("Comprador maior de idade")
+    console.log("Boa viagem!")
     listaDeDestinos.splice(1,1)
 }else{
         console.log("Comprador não é maior de idade. Compra não concluída")
