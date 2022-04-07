@@ -6,6 +6,7 @@ const listaDeDestinos = new Array(
 )
 
 const idadeComprador = 15
+const estaAcompanhado = true
 console.log("Destinos possíveis: ")
 console.log(listaDeDestinos)
 
@@ -13,7 +14,13 @@ if (idadeComprador >= 18) {
     console.log("Comprador maior de idade")
     listaDeDestinos.splice(1,1)
 }else{
-    console.log("Comprador não é maior de idade. Compra não concluída")
+    //A pessoa é menor de idade
+    if(estaAcompanhado) {
+        console.log("Comprador está acompanhado")
+        listaDeDestinos.splice(1,1)
+    }else{
+        console.log("Comprador não é maior de idade. Compra não concluída")
+    }
 }
 
 console.log(listaDeDestinos)
