@@ -12,5 +12,8 @@ console.log(listaDeDestinos)
 if (idadeComprador >= 18) {
     console.log("Comprador maior de idade")
     listaDeDestinos.splice(1,1)
+}else{
+    console.log("Comprador não é maior de idade. Compra não concluída")
 }
 
+console.log(listaDeDestinos)
