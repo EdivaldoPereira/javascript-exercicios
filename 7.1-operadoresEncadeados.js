@@ -10,13 +10,13 @@ const estaAcompanhado = true
 console.log("Destinos possíveis: ")
 console.log(listaDeDestinos)
 
-if (idadeComprador >= 18) {
+if (
+    idadeComprador >= 18 ||
+    estaAcompanhado == true
+    ) {
     console.log("Comprador maior de idade")
     listaDeDestinos.splice(1,1)
-}else if(estaAcompanhado == true) {
-        console.log("Comprador está acompanhado")
-        listaDeDestinos.splice(1,1)
-    }else{
+}else{
         console.log("Comprador não é maior de idade. Compra não concluída")
     }
 
