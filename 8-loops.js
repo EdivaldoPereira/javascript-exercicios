@@ -16,7 +16,12 @@ console.log(listaDeDestinos)
 const podeComprar =  idadeComprador >= 18 || estaAcompanhado == true
 let contador = 0
 while(contador < 3){
-    console.log(listaDeDestinos[contador])
+    if (listaDeDestinos[contador] == destino){
+        console.log("Destino existe")
+
+    }else{
+        console.log("Destino não existe")
+    }
     contador = contador + 1
 }
     
