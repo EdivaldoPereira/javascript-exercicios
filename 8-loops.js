@@ -5,28 +5,18 @@ const listaDeDestinos = new Array(
     `Rio de Janeiro`
 )
 
-const idadeComprador = 15
-const estaAcompanhado = true
-const temPassagemComprada = true
+const idadeComprador = 18
+const estaAcompanhado = false
+let temPassagemComprada = false
+const destino = "Rio de Janeiro"
 
 console.log("\nDestinos possíveis: ")
 console.log(listaDeDestinos)
 
-if (
-    idadeComprador >= 18 ||
-    estaAcompanhado == true
-    ) {
-    console.log("Boa viagem!")
-    listaDeDestinos.splice(1,1)
-}else{
-        console.log("Comprador não é maior de idade. Compra não concluída")
-    }
-
-    console.log("Embraque: \n\n")
-if(idadeComprador >= 18 && temPassagemComprada){
-    console.log("Boa viagem")
-}else{
-    console.log("Você não pode embarcar")
-    }
-
-console.log(listaDeDestinos)
+const podeComprar =  idadeComprador >= 18 || estaAcompanhado == true
+let contador = 0
+while(contador < 3){
+    console.log(listaDeDestinos[contador])
+    contador = contador + 1
+}
+    
